@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header{
+    background-color: #634caf;
+    color: lch(100% 0.01 296.81);
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 20px ;
+    padding: 10px;
+    background-color: oklch(13.441% 0.00002 271.152 / 0.897);
+    text-align: center;
+}
+nav a  {
+    color: rgb(11, 46, 88);
+    margin: 0 15px;
+    text-decoration: none;
+}
+.container {
+    padding: 20px;
+}
+.hidden {
+    display: flex;
+}
+.product cart{
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+.product cart img{
+    width: 100%;
+    border-radius: 8px;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.cart-table th, .cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+input, select {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
