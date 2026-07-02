@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" 
+    content="Life Saver Blood Donation Program - Donor Registration and Emergency Blood Request">
+
+    <meta name="author" content="Life Saver Blood Donation Program">
+
+    <title>Life Saver Blood Donation Program</title>
+
+    <style>
+      *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+
+        }
+
+        header {
+            background-color: #b30000;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        header h1{
+            font-size: 32px;
+        }
+        header p {
+            font: size 18px;
+            margin-top: 10px;
+        }
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+        section {
+
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+
+        }
+        article {
+            padding: 15px;
+        }
+
+        #title {
+            color:white;
+            position:relative;
+            z-index: 1;
+        }
+
+        .form-box {
+            width :100%;
+            padding: 15px;
+            border:1
+        }
+        h2 {
+            color: #b30000;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input:focus,textarea:focus{
+            outline: 3px solid #ff9999;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #b30000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+         button:hover {
+            background-color: green;
+        }
+
+
+        fieldset {
+            padding: 15px;
+            border: 2px solid #b30000;
+            margin-bottom: 15px;
+        }
+
+         legend {
+            color: #b30000;
+            font-weight: bold;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+          th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+
+        th {
+            background-color: #b30000;
+            color: white;
+        }
+
+
+        tr:hover {
+            background-color: #ffe6e6;
+        }
+
+         footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+    <h1 id="title">Life Saver Blood Donation Program</h1>
+
+    <p>
+        Donate blood, save lives. Join our community blood donation campaign.
+    </p>
+
+</header>
+
+
+<main>
+
+
+<section>
+
+<article>
+
+<h2>Blood Donor Registration Form</h2>
+
+
+<form class="form-box">
+
+<fieldset>
+
+<legend>Donor Information</legend>
+
+
+<label>Full Name:</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Age:</label>
+<input type="number" placeholder="Enter your age">
+
+<label>Gender:</label>
+
+<select>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+</select>
+
+<label>Blood Group:</label>
+
+<select>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+    <option>O+</option>
+    <option>O-</option> 
+</select>
+
+<label>Phone Number:</label>
+<input type="tel" placeholder="Enter phone number">
+
+
+<label>Email:</label>
+<input type="email" placeholder="Enter email">
+
+
+<label>Address:</label>
+<textarea rows="3"></textarea>
+
+
+<label>Last Donation Date:</label>
+<input type="date">
+
+
+<label>Health Condition:</label>
+<textarea rows="3"></textarea>
+
+
+
+<button type="submit">Register</button>
+
+
+</fieldset>
+
+</form>
+
+</article>
+
+</section>
+
+
+
+
+
+<section>
+
+<article>
+
+<h2>Blood Request Form</h2>
+
+
+<form class="form-box">
+
+
+<fieldset>
+
+<legend>Emergency Blood Request</legend>
+
+
+<label>Patient Name:</label>
+<input type="text">
+
+
+<label>Required Blood Group:</label>
+
+<select>
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+
+
+<label>Hospital Name:</label>
+<input type="text">
+
+
+<label>Emergency Contact Number:</label>
+<input type="tel">
+
+
+<label>Required Date:</label>
+<input type="date">
+
+
+<label>Additional Message:</label>
+
+<textarea rows="4"></textarea>
+
+
+
+<button type="submit">Send Request</button>
+
+
+</fieldset>
+
+
+</form>
+
+
+</article>
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2>Available Blood Groups</h2>
+
+
+<table>
+
+<tr>
+<th>Blood Group</th>
+<th>Number of Registered Donors</th>
+</tr>
+
+
+<tr>
+<td>A+</td>
+<td>25</td>
+</tr>
+
+
+<tr>
+<td>A-</td>
+<td>10</td>
+</tr>
+
+
+<tr>
+<td>B+</td>
+<td>30</td>
+</tr>
+
+
+<tr>
+<td>B-</td>
+<td>8</td>
+</tr>
+
+
+<tr>
+<td>O+</td>
+<td>40</td>
+</tr>
+
+
+<tr>
+<td>AB+</td>
+<td>15</td>
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+© 2026 Life Saver Blood Donation Program | Every Drop Can Save A Life
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
+
+</body>
+</html>
