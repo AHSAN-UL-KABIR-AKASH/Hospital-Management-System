@@ -1,3 +1,0 @@
-# Deny all direct public access to medical documents.
-# Documents must only be served through admin/view_document.php after authentication.
-Require all denied
