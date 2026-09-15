@@ -1,0 +1,231 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef2f7; /* Softer background */
+ }
+ 
+ .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+ }
+ 
+ .sidebar {
+    width: 250px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 800px; /* Full height sidebar */
+   
+ }
+ 
+ .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ 
+ .sidebar ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .sidebar ul li {
+    margin-bottom: 10px;
+ }
+ 
+ .sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .sidebar ul li a:hover {
+    background-color: #0056b3;
+ }
+ /* Settings Dropdown Styling */
+.settings-menu {
+    position: relative;
+ }
+ 
+ #settings-icon {
+    cursor: pointer;
+ }
+ 
+ .dropdown {
+    position: absolute;
+    background-color: #007BFF;
+    color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    top: 30px;
+    left: 0;
+    transform: translate(50%, 0%); 
+ }
+ 
+ .dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+ }
+ 
+ .dropdown a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+ }
+ .main-content {
+   flex-grow: 1;
+   padding: 35px 10px; /* change top bar logout */
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   background: #fdfefe;
+   overflow-y: auto;
+   scroll-behavior: smooth;
+ }
+ 
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+ }
+ 
+ header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+ }
+ 
+ .logout-button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .logout-button:hover {
+    background-color: #d35400;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+ }
+ 
+ .content {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+.prescription {
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.prescription:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.prescription h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.prescription p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #555;
+    
+    
+
+}
+
+.medications ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+footer a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    float: right; /* Move the button to the right */
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

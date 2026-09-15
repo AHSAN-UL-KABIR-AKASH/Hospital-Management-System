@@ -1,0 +1,414 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.logout-button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+    background-color: #ff4c33;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Content */
+.content {
+    margin-top: 20px;
+}
+
+
+
+/* Section for managing tasks */
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 20px;
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+section ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+section ul li a:active {
+    transform: translateY(1px);
+}
+
+section ul li a:focus {
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+section ul li:hover {
+    transform: scale(1.02);
+}
+
+section ul li a:visited {
+    color: #555;
+}
+
+section ul li a:focus-visible {
+    outline: 2px dotted #007BFF;
+}
+
+
+.overview {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 175px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.patient-search {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-search h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.patient-search form {
+    display: flex;
+    gap: 10px;
+}
+
+.patient-search input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.patient-search button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.patient-search button:hover {
+    background-color: #0056b3;
+}
+
+
+.patient-details {
+    /* display: none; */
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-details th, .patient-details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.patient-details th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.appointments {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointments h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.appointments table {
+    display: none; /* ------------------------------------ */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointments th, .appointments td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.appointments th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.appointments .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.appointments .action-buttons button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.appointments .accept {
+    background-color: #28a745;
+}
+
+.appointments .accept:hover {
+    background-color: #218838;
+}
+
+.appointments .reject {
+    background-color: #dc3545;
+}
+
+.appointments .reject:hover {
+    background-color: #c82333;
+}
+
+/* Table container styling */
+.table-container {
+    width: 80%; /* Adjust the container width */
+    margin: 20px auto; /* Center-align the container with top and bottom margin */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading styling */
+.table-container h2 {
+    text-align: center; /* Center-align the header */
+    color: #343a40; /* Dark gray text */
+    font-size: 24px; /* Font size for the header */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px; /* Space above the table */
+    font-family: Arial, sans-serif; /* Font style for readability */
+}
+
+/* Table header styles */
+table th {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text */
+    font-weight: bold; /* Bold header text */
+    text-align: center; /* Center-align header text */
+    padding: 12px; /* Add padding inside cells */
+    border: 1px solid #ddd; /* Subtle border for separation */
+}
+
+/* Table cell styles */
+table td {
+    text-align: center; /* Center-align table data */
+    padding: 12px; /* Add padding inside cells */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    font-size: 14px; /* Font size for readability */
+    color: #333; /* Dark text color */
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray background for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Hover effect for rows */
+table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+/* Responsive table: make it scrollable on small screens */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
